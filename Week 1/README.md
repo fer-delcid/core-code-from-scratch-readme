@@ -28,3 +28,62 @@ You have been selected to develop the algorithm that will be used to convert dol
 6. Result <-- A * Bit
 7. PRINT "USD " + A + " = " + "BTC " + Result  
 8. END
+
+## 4. Your date of birth in the matrix?
+### Description
+Your team has just seen the movie "Matrix" and you have been asked, how the number of your year of birth would be written in binary. You must learn how to translate your date of birth into binary and show your team. (Do not use a webpage or a tool to convert your date of birth)
+
+### Solution
+1. START
+2. 
+
+## 5. MIPS exercises
+### a. Create a program that adds any two given numbers provided by the user
+Solution:
+
+    .data
+	            number1: .asciiz "\nType the first number: "
+              number2: .asciiz "\nType the second number: "
+              result_message: .asciiz "\nResult: "
+    .text
+	        main:
+              li $v0, 4
+              la $a0, number1
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t0, $v0
+
+              li $v0, 4
+              la $a0, number2
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t1, $v0
+
+              li $v0, 1
+              move $a0, $t0
+              syscall
+              
+              add $t2, $t0, $t1 
+              
+              li $v0, 4
+              la $a0 result_message
+              syscall
+              
+              li $v0, 1
+              move $a0, $t2
+              syscall
+              
+### b. Create a program that displays your name
+    .data
+        name: .asciiz "\nFernando\n"
+    .text
+        main:
+              li $v0, 4
+              la $a0, name
+              syscall
