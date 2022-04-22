@@ -47,3 +47,27 @@ function getChar(c){
   return ans;
 }
 ```
+
+## Binary Addition
+### Instruction
+<img width="542" alt="Captura de Pantalla 2022-04-22 a la(s) 11 42 33 a  m" src="https://user-images.githubusercontent.com/91048093/164766523-b189c7e6-9916-40c9-974e-c2d22afce007.png">
+
+### Solution
+```javascript
+function addBinary(a, b) {
+  let suma=a+b;
+  return suma.toString(2);
+}
+```
+
+## Student´s Final Grade
+### Instruction
+<img width="533" alt="Captura de Pantalla 2022-04-22 a la(s) 11 44 21 a  m" src="https://user-images.githubusercontent.com/91048093/164766749-6471ecee-0fec-422e-b174-468c8271e14e.png">
+
+### Solution
+```javascript
+function addBinary(a, b) {
+  return (a + b).toString(2);
+}
+```
+
