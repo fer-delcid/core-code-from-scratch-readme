@@ -71,3 +71,17 @@ function addBinary(a, b) {
 }
 ```
 
+## Holiday VIII - Duty Free
+### Instructions
+<img width="543" alt="Captura de Pantalla 2022-04-22 a la(s) 12 29 40 p  m" src="https://user-images.githubusercontent.com/91048093/164773494-558bc79d-e23c-4205-b41b-6e54466c3083.png">
+
+### Solution
+```javascript
+function dutyFree(normPrice, discount, hol){
+  let total = hol / ((discount * normPrice) / 100);
+  return Math.floor(total);
+}
+```
+
+
+
