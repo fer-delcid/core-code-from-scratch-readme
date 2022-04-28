@@ -15,3 +15,19 @@ function likes(names) {
   return (names[0] +', ' +names[1] +' and ' +(names.length - 2) +' others like this');
 }
 ```
+## Bit Counting
+### Instructions
+<img width="524" alt="Captura de Pantalla 2022-04-28 a la(s) 9 13 30 a  m" src="https://user-images.githubusercontent.com/91048093/165785453-58d90d46-aae0-4d7d-903c-c65702577397.png">
+
+### Solution
+```javascript
+var countBits = function(n) {
+  // Program Me
+  let bin = n.toString(2);
+  let cont=0;
+  for(let i=0; i<bin.length; i++){
+    if(bin[i]==='1')cont++;
+  }
+  return cont;
+};
+```
