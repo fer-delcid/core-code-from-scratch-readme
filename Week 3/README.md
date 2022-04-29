@@ -31,3 +31,33 @@ var countBits = function(n) {
   return cont;
 };
 ```
+## Your Order, Please
+### Instructions
+<img width="539" alt="Captura de Pantalla 2022-04-28 a la(s) 11 14 39 p  m" src="https://user-images.githubusercontent.com/91048093/165888491-d0fa9196-6f73-4f16-8e72-ef6f1ae0e264.png">
+
+### Solution
+```javascript
+function order(words) {
+  let arrayOrd = [];
+  let palabras = words.split(' ');
+  for (let i = 0; i < palabras.length; i++) {
+    let numero = getWordNumber(palabras[i]);
+    arrayOrd[numero] = wordsArray[i];
+  }
+  return cleanUndefined(arrayOrd).join(' ');
+}
+
+function getWordNumber(word) {
+  for (let i = 0; i < word.length; i++) {
+    if (!Number.isNaN(Number(word[i]))) return word[i];
+  }
+}
+
+function cleanUndefined(array) {
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] != undefined) result.push(array[i]);
+  }
+  return result;
+}
+```
