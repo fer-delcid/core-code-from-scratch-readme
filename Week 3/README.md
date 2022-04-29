@@ -42,7 +42,7 @@ function order(words) {
   let palabras = words.split(' ');
   for (let i = 0; i < palabras.length; i++) {
     let numero = getWordNumber(palabras[i]);
-    arrayOrd[numero] = wordsArray[i];
+    arrayOrd[numero] = palabras[i];
   }
   return cleanUndefined(arrayOrd).join(' ');
 }
