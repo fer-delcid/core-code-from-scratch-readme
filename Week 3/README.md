@@ -61,6 +61,7 @@ function cleanUndefined(array) {
   return result;
 }
 ```
+## Core Code challenges Tuesday
 ## Simple Pig Latin
 ### Instructions
 <img width="540" alt="Captura de Pantalla 2022-04-29 a la(s) 12 50 28 a  m" src="https://user-images.githubusercontent.com/91048093/165897101-149c04f5-16fc-41ec-8185-bdbad7df583a.png">
