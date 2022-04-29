@@ -22,7 +22,6 @@ function likes(names) {
 ### Solution
 ```javascript
 var countBits = function(n) {
-  // Program Me
   let bin = n.toString(2);
   let cont=0;
   for(let i=0; i<bin.length; i++){
