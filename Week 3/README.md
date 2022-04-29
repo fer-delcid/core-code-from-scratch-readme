@@ -61,3 +61,39 @@ function cleanUndefined(array) {
   return result;
 }
 ```
+## Simple Pig Latin
+### Instructions
+<img width="540" alt="Captura de Pantalla 2022-04-29 a la(s) 12 50 28 a  m" src="https://user-images.githubusercontent.com/91048093/165897101-149c04f5-16fc-41ec-8185-bdbad7df583a.png">
+
+### Solution
+```javascript
+function pigIt(str){
+  //Code here
+  let arr = [];
+  let words = str.split(' ');
+  
+  for(let i=0; i<words.length; i++){
+    arr[i]=finalWord(words[i]);
+  }
+  
+  return arr.join(' ');
+}
+
+function finalWord(word){
+  let wordLe=word.length;
+  let nueva = '';
+  let pMarks = ['!', '¡', '?', '¿', '.', ',', ':', ';'];
+  
+  for(let i=0; i<pMarks.length; i++){
+    if(word===pMarks[i]){
+      return word;
+    }
+  }
+  
+  for(let i=0; i<wordLe; i++){
+    let aux = word[0];
+    nueva = word.substring(1,wordLe)+aux+'ay';
+  }
+  return nueva;
+}
+```
