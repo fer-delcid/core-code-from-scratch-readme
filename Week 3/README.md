@@ -97,3 +97,27 @@ function finalWord(word){
   return nueva;
 }
 ```
+## Decode The Morse Code
+### Instructions
+<img width="529" alt="Captura de Pantalla 2022-05-03 a la(s) 12 18 31 p  m" src="https://user-images.githubusercontent.com/91048093/166517189-e121f432-c0b0-4cd2-84f4-4829980e2c7f.png">
+
+### Solution
+```javascript
+decodeMorse = function(morseCode){
+  let morseWords = morseCode.split('   ');
+  let words=[];
+  for(let i=0; i<morseWords.length; i++){
+    words[i]=decoWord(morseWords[i]);  
+  }
+  return words.join(' ').trim();
+}
+
+function decoWord(morseWord){
+  let s = morseWord.split(' ');
+  let sn = [];
+  for(let i=0; i<s.length; i++){
+    sn[i]=MORSE_CODE[s[i]];
+  }
+  return sn.join('');
+}
+```
