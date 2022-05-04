@@ -121,3 +121,25 @@ function decoWord(morseWord){
   return sn.join('');
 }
 ```
+## Valid Parenthesis
+### Instructions
+<img width="533" alt="Captura de Pantalla 2022-05-04 a la(s) 8 41 13 a  m" src="https://user-images.githubusercontent.com/91048093/166705737-9caf7fd2-3bc9-4ffd-87d5-db52c6915a49.png">
+
+### Solution
+```javascript
+function validParentheses(parens) {
+  // your code here ..
+  let cantidadP = 0;
+  for (let i = 0; i < parens.length; i++) {
+    if (cantidadP < 0) return false;
+    if (parens[i] === '(') cantidadP++;
+    if (parens[i] === ')') cantidadP--;  
+  }
+  
+  if(cantidadP==0){
+    return true;
+  }else{
+    return false;
+  }
+}
+```
