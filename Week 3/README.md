@@ -164,7 +164,7 @@ var uniqueInOrder=function(iterable){
 }
 ```
 ## Week Challenges Thursday
-## Encrytp This
+## Encrypt This
 ### Instructions
 <img width="543" alt="Captura de Pantalla 2022-05-09 a la(s) 1 21 30 a  m" src="https://user-images.githubusercontent.com/91048093/167359949-bbd0f585-6fec-43ca-ad77-8766ca7a2c93.png">
 
