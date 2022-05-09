@@ -164,3 +164,5 @@ var uniqueInOrder=function(iterable){
 }
 ```
 ## Week Challenges Thursday
+## 1st Core Challenge draft
+I'm Fernando, a software engineering student. I have more experience in Java language and I'm learning Javascript for web development. I'm looking to grow as a frontend web developer, building good websites for companies or to build my own websites. I am a fast learner, who likes new challenges helping people with the superpower of programming 💻💪🏻
