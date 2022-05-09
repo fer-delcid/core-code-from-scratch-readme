@@ -164,5 +164,34 @@ var uniqueInOrder=function(iterable){
 }
 ```
 ## Week Challenges Thursday
+## Encrytp This
+### Instructions
+<img width="543" alt="Captura de Pantalla 2022-05-09 a la(s) 1 21 30 a  m" src="https://user-images.githubusercontent.com/91048093/167359949-bbd0f585-6fec-43ca-ad77-8766ca7a2c93.png">
+
+### Solution 
+```javascript
+var encryptThis = function(text) {
+  let arr = text.split(' ');
+  let nArr=[];
+  for(let i=0; i<arr.length; i++){
+    nArr.push(wordChange(arr[i]));
+  }
+  
+  return nArr.join(' ');
+}
+
+function wordChange(word){
+  if(word.length==1)return word.charCodeAt();
+  if(word.length==2)return word[0].charCodeAt()+word[1];
+  let first = word[0].charCodeAt();
+  let newS = word.substring(1,word.length);
+  let mid = newS.substring(1,newS.length-1);
+  let second = newS[0];
+  let last = word[word.length-1];
+  
+  return first.toString()+last+mid+second;
+}
+```
+
 ## 1st Core Challenge draft
 I'm Fernando, a software engineering student. I have more experience in Java language and I'm learning Javascript for web development. I'm looking to grow as a frontend web developer, building good websites for companies or to build my own websites. I am a fast learner, who likes new challenges helping people with the superpower of programming 💻💪🏻
