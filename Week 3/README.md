@@ -143,3 +143,24 @@ function validParentheses(parens) {
   }
 }
 ```
+
+## Unique Order
+### Instructions
+<img width="545" alt="Captura de Pantalla 2022-05-09 a la(s) 12 22 57 a  m" src="https://user-images.githubusercontent.com/91048093/167351924-ff84f321-2f07-4c8b-9b39-a6768bce5329.png">
+
+### Solution
+```javascript
+var uniqueInOrder=function(iterable){
+  //your code here - remember iterable can be a string or an array
+  let arr = [];
+  let aux;
+  for (let i = 0; i < iterable.length; i++) {
+    if (iterable[i] !== aux) {
+      aux = iterable[i];
+      arr.push(aux);
+    }
+  }
+  return arr;
+}
+```
+## Week Challenges Thursday
