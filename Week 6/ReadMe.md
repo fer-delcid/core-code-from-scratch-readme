@@ -33,3 +33,18 @@ export class G964 {
   
 }
 ```
+
+## Mumbling
+### Instructions
+<img width="548" alt="Captura de Pantalla 2022-06-09 a la(s) 12 27 58 p  m" src="https://user-images.githubusercontent.com/91048093/172918589-e3cf1268-7025-4727-a28d-203e7ebb90ab.png">
+### Solution
+```javascript
+export function accum(s: string): string {
+  return s
+    .toLowerCase()
+    .split('')
+    .map((letter: string, i: number) => `${letter.toUpperCase()}${letter.repeat(i)}`)
+    .join('-');
+}
+```
+
